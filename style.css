@@ -1,5 +1,4 @@
-body
-{
+body{
     margin: 10px;
     color: #000;
     background: #fff;
@@ -77,7 +76,6 @@ body
 
 .headerClass img {
   height: 6.5em;
-
 }
 
 .iconesHeader {
@@ -113,7 +111,6 @@ body
 }
 
 .carrinhoArea.aberto {
-
   position: fixed;
   right: 0vw;
   width: 35vw;

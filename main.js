@@ -93,4 +93,4 @@ document.addEventListener('click', (event) => {
   if (!carrinhoArea.contains(event.target) && !abrirCarrinhoButton.contains(event.target)) {
     carrinhoArea.classList.remove('aberto');
   }
-});
+}); 

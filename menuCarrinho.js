@@ -3,7 +3,7 @@ function abrirCarrinho() {
 }
 
 function fecharCarrinho() {
-    
+
 }
 
 // export function controleCarrinho() {
