@@ -1,0 +1,74 @@
+body
+{
+    margin: 20px;
+    color: #000;
+    background: #fff;
+    font: 90%/1.3 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+}
+
+.card-produto {
+  /* Estilos comuns para todos os cartões de produtos */
+  background-color: aquamarine;
+  width: 90vw;
+  padding: 1em;
+  margin: 1em 1em;
+  border: 1px solid blue;
+  
+  /* Flexbox para reorganizar elementos */
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align:initial;
+}
+
+.card-produto {
+  background-color: aquamarine;
+  width: calc(33.33% - 5em); /* 3 cartões por linha, com espaço entre eles */
+  padding: 1em;
+  margin-bottom: 1em; /* Espaço entre as linhas */
+  border: 1px solid blue;
+  text-align: center;
+}
+
+#container-produto {
+  display: flex;
+}
+
+.marcaProduto {
+  align-items:center;
+  text-align:center;
+}
+
+.card-produto img {
+  /* Imagem responsiva */
+  max-width: fit-content;
+  height: 100vh;
+}
+
+#container-produto {
+  width: 90vw;
+  padding: 1em;
+  margin: 1em 2em;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+  justify-content:space-around; /* Espaço entre os cartões */
+  box-sizing: border-box; /* Evita que as bordas adicionem ao tamanho total */
+}
+
+
+/* Media Query para telas menores */
+@media screen and (max-width: 768px) {
+  .card-produto {
+      width: 100%; /* Ocupar a largura total */
+  }
+}
+
+.headerClass {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,53,128,1) 52%, rgba(0,212,255,1) 100%);
+  height: 100px;
+}
+
+.headerClass img {
+  height: 6.5em;
+}
