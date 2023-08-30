@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-    <link href="/dist/output.css" rel="stylesheet">
+    <script  src="https://kit.fontawesome.com/e84a804523.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <section class="carrinhoArea">
+      <p>Meu carrinho</p>
+      <button id="fecharCarrinho"><i class="fa-solid fa-circle-xmark"></i></button>
+    </section>
     <header class="headerClass">
       <img src="./assets/logo/hashtag.svg" alt="logo do ecommerce"/>
+      <div class="iconesHeader">
+      <button id="abrirCarrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+      <button><i class="fa-solid fa-user"></i></button>
+    </div>
     </header>
     <main>
       <h1>Hello E-commerce!</h1>
       <section id="container-produto"></section>
     </main>
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

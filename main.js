@@ -70,14 +70,27 @@ for (const produtoCatalogo of catalogo) {
     <div class="card-produto">
         <img
           src="./assets/img/${produtoCatalogo.imagem}"
-          alt="Produto 1 do Magazine Hashtag."
+          alt="Produto ${produtoCatalogo.id} do Magazine Hashtag."
           style="height: 300px"
         />
         <p class="marcaProduto">${produtoCatalogo.marca}</p>
         <p>${produtoCatalogo.nome}</p>
         <p>$${produtoCatalogo.preco}</p>
-        <button >Adicionar</button>
+        <button class="botaoAdicionar">Adicionar</button>
     </div>`;
 
     document.getElementById("container-produto").innerHTML += cartaoProduto;
 }
+
+const abrirCarrinhoButton = document.getElementById('abrirCarrinho');
+const carrinhoArea = document.querySelector('.carrinhoArea');
+
+abrirCarrinhoButton.addEventListener('click', () => {
+  carrinhoArea.classList.toggle('aberto');
+});
+
+document.addEventListener('click', (event) => {
+  if (!carrinhoArea.contains(event.target) && !abrirCarrinhoButton.contains(event.target)) {
+    carrinhoArea.classList.remove('aberto');
+  }
+});
