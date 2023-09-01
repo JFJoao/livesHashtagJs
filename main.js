@@ -84,6 +84,7 @@ for (const produtoCatalogo of catalogo) {
 
 const abrirCarrinhoButton = document.getElementById('abrirCarrinho');
 const carrinhoArea = document.querySelector('.carrinhoArea');
+const fecharCarrinhoButton = document.getElementById('fecharCarrinho');
 
 abrirCarrinhoButton.addEventListener('click', () => {
   carrinhoArea.classList.toggle('aberto');
@@ -94,3 +95,7 @@ document.addEventListener('click', (event) => {
     carrinhoArea.classList.remove('aberto');
   }
 }); 
+
+fecharCarrinhoButton.addEventListener('click', () => {
+  carrinhoArea.classList.remove('aberto');
+});
