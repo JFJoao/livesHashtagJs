@@ -118,7 +118,6 @@ body{
   background-color: #f1f1f1;
   transform: translateY(0%);
   transition: transform 0.4s ease-in-out;
-  display: flex;
   justify-content: space-between;
   align-items:flex-start;
 }
@@ -132,6 +131,7 @@ h1 {
   align-items: center;
   margin-top: 0.5em;
   font-size: 1.45em;
+  cursor: pointer;
 }
 
 #fecharCarrinho p {
@@ -144,4 +144,10 @@ h1 {
   border: 1px solid #000;
   border-radius: 10px;
   padding: 7px;
+}
+
+.carrinhoHead {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
 }
