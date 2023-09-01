@@ -1,4 +1,4 @@
-import { catalogo } from "./utilidades";
+import { catalogo } from "./src/utilidades";
 
 function abrirCarrinho() {
   document.getElementById("carrinho").classList.add("right-[0px]");
